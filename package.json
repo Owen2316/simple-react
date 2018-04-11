@@ -1,7 +1,7 @@
 {
   "name": "blog-front-end",
   "version": "1.0.0",
-  "description": "The front end of my blog",
+  "description": "A simple react project",
   "main": "/dist/app.js",
   "author": "Owen Ou",
   "license": "MIT",
