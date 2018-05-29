@@ -7,7 +7,7 @@ import {Default} from './Layout';
 class App extends React.Component {
     render() {
         return <Switch>
-            <Default key="/" exact={true} path="/" />
+            <Default key="/" exact={true} path="/" component={'home page'}/>
         </Switch>;
     }
 }
