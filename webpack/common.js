@@ -1,6 +1,6 @@
 const path = require('path');
 const dist = path.resolve('./dist');
-const srcPath = path.join(__dirname, '/../src');
+const src = path.join('./src');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -19,7 +19,7 @@ module.exports = {
                 enforce: 'pre',
                 test: /\.(js|jsx)$/,
                 include: [
-                    srcPath
+                    src
                 ],
                 loader: 'babel-loader'
             },
@@ -38,7 +38,7 @@ module.exports = {
         ]
     },
     resolve: {
-        modules: ['node_modules'],
+        modules: [path.resolve('./node_modules')],
         alias: {
             actions: path.resolve('./src/actions/'),
             reducers: path.resolve('./src/reducers/'),
