@@ -1,6 +1,6 @@
 const path = require('path');
 const dist = path.resolve('./dist');
-const src = path.join('./src');
+const src = path.resolve('./src');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
