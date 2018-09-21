@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const common = require('./common.js');
 
 module.exports = merge(common, {
-    devtool: 'source-map',
+    devtool: 'eval-source-map',
     mode: 'development',
     devServer: {
         historyApiFallback: true,

@@ -25,14 +25,23 @@ module.exports = {
             },
             {
                 test: /\.css$/,
+                include: [
+                    src
+                ],
                 loader: 'css-loader'
             },
             {
                 test: /\.scss/,
+                include: [
+                    src
+                ],
                 loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
             },
             {
                 test: /\.html/,
+                include: [
+                    src
+                ],
                 loader: 'html-loader'
             }
         ]
@@ -53,7 +62,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: 'Hello React',
-            template: path.resolve('./index.html')
+            template: path.resolve('./index.html'),
+            inject: 'head'
         }),
         new CopyWebpackPlugin()
     ]
