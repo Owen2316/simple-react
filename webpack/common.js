@@ -62,8 +62,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: 'Hello React',
-            template: path.resolve('./index.html'),
-            inject: 'head'
+            template: path.resolve('./index.html')
         }),
         new CopyWebpackPlugin()
     ]
